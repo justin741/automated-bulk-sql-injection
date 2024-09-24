@@ -8,11 +8,8 @@ Once potential targets are identified, the tool employs SQLMap to perform automa
 
 Key Features:
 • Automated discovery of SQL injection vulnerabilities
-
 • Support for bulk URL processing
-
 • Integration with SQLMap for vulnerability testing
-
 • Utilizes Google dorks for effective target identification
 
 
